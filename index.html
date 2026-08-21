@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="refresh" content="10;url=https://ssmmpanel.com">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Domain Değişikliği | ssmmpanel.com</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+      color: #e8eefc;
+      background:
+        radial-gradient(circle at top, rgba(34, 211, 238, 0.12), transparent 45%),
+        radial-gradient(circle at bottom right, rgba(129, 140, 248, 0.12), transparent 40%),
+        linear-gradient(180deg, #070b14 0%, #0a1220 50%, #070b14 100%);
+    }
+
+    .card {
+      width: 100%;
+      max-width: 640px;
+      padding: 40px 32px;
+      border: 1px solid #243049;
+      border-radius: 20px;
+      background: rgba(18, 26, 43, 0.95);
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
+      text-align: center;
+    }
+
+    .badge {
+      display: inline-block;
+      margin-bottom: 20px;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: rgba(34, 211, 238, 0.12);
+      border: 1px solid rgba(34, 211, 238, 0.25);
+      color: #67e8f9;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+    }
+
+    h1 {
+      margin-bottom: 18px;
+      font-size: clamp(1.6rem, 4vw, 2rem);
+      line-height: 1.25;
+    }
+
+    p {
+      margin-bottom: 16px;
+      color: #93a0b8;
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+
+    .highlight {
+      color: #e8eefc;
+      font-weight: 600;
+    }
+
+    .countdown {
+      margin: 28px 0 24px;
+      color: #67e8f9;
+      font-size: 0.95rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 220px;
+      padding: 14px 24px;
+      border: none;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #22d3ee, #6366f1);
+      color: #041016;
+      font-size: 1rem;
+      font-weight: 700;
+      text-decoration: none;
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      box-shadow: 0 10px 30px rgba(34, 211, 238, 0.25);
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 36px rgba(34, 211, 238, 0.35);
+    }
+
+    .footer {
+      margin-top: 24px;
+      color: #64748b;
+      font-size: 0.875rem;
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <div class="badge">Domain Değişikliği</div>
+    <h1>Yeni adresimize taşındık</h1>
+    <p>
+      Domain değişikliğine gidiyoruz. İşlerimizi daha profesyonel, hızlı ve güvenli yapmak adına
+      <span class="highlight">smmcheappanel.net</span> adresini
+      <span class="highlight">ssmmpanel.com</span> adresine taşıdık.
+    </p>
+    <p>
+      smmcheappanel'de bakiyeniz varsa lütfen bunu bize
+      <span class="highlight">ssmmpanel.com</span> üzerinde canlı desteğe bağlanarak veya
+      WhatsApp üzerinden yazarak bildirin. Gerekli kontrolleri sağlayıp sizlere bakiye eklemesi yapacağız.
+    </p>
+    <p>Anlayışınız için teşekkürler.</p>
+
+    <div class="countdown">
+      <span id="seconds">10</span> saniye içinde yeni siteye yönlendirileceksiniz...
+    </div>
+
+    <a class="btn" href="https://ssmmpanel.com">ssmmpanel.com'a Git</a>
+    <div class="footer">smmcheappanel.net artık kullanılmamaktadır.</div>
+  </main>
+
+  <script>
+    var targetUrl = "https://ssmmpanel.com";
+    var remaining = 10;
+    var secondsEl = document.getElementById("seconds");
+
+    var timer = setInterval(function () {
+      remaining -= 1;
+      if (secondsEl) {
+        secondsEl.textContent = String(remaining);
+      }
+      if (remaining <= 0) {
+        clearInterval(timer);
+        window.location.replace(targetUrl);
+      }
+    }, 1000);
+  </script>
+</body>
+</html>
