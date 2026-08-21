@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="refresh" content="10;url=https://ssmmpanel.com">
   <meta name="robots" content="noindex, nofollow">
-  <title>Domain Değişikliği | ssmmpanel.com</title>
+  <title>Domain Change | ssmmpanel.com</title>
   <style>
     * {
       box-sizing: border-box;
@@ -69,17 +68,12 @@
       font-weight: 600;
     }
 
-    .countdown {
-      margin: 28px 0 24px;
-      color: #67e8f9;
-      font-size: 0.95rem;
-    }
-
     .btn {
       display: inline-flex;
       align-items: center;
       justify-content: center;
       min-width: 220px;
+      margin-top: 12px;
       padding: 14px 24px;
       border: none;
       border-radius: 12px;
@@ -107,43 +101,22 @@
 </head>
 <body>
   <main class="card">
-    <div class="badge">Domain Değişikliği</div>
-    <h1>Yeni adresimize taşındık</h1>
+    <div class="badge">Domain Change</div>
+    <h1>We have moved to our new address</h1>
     <p>
-      Domain değişikliğine gidiyoruz. İşlerimizi daha profesyonel, hızlı ve güvenli yapmak adına
-      <span class="highlight">smmcheappanel.net</span> adresini
-      <span class="highlight">ssmmpanel.com</span> adresine taşıdık.
+      We are changing domains. To make our services more professional, faster, and secure, we have moved
+      <span class="highlight">smmcheappanel.net</span> to
+      <span class="highlight">ssmmpanel.com</span>.
     </p>
     <p>
-      smmcheappanel'de bakiyeniz varsa lütfen bunu bize
-      <span class="highlight">ssmmpanel.com</span> üzerinde canlı desteğe bağlanarak veya
-      WhatsApp üzerinden yazarak bildirin. Gerekli kontrolleri sağlayıp sizlere bakiye eklemesi yapacağız.
+      If you have a balance on smmcheappanel, please let us know by connecting to live support on
+      <span class="highlight">ssmmpanel.com</span> or by contacting us via WhatsApp. After the necessary
+      checks, we will add your balance to your account.
     </p>
-    <p>Anlayışınız için teşekkürler.</p>
+    <p>Thank you for your understanding.</p>
 
-    <div class="countdown">
-      <span id="seconds">10</span> saniye içinde yeni siteye yönlendirileceksiniz...
-    </div>
-
-    <a class="btn" href="https://ssmmpanel.com">ssmmpanel.com'a Git</a>
-    <div class="footer">smmcheappanel.net artık kullanılmamaktadır.</div>
+    <a class="btn" href="https://ssmmpanel.com">Go to ssmmpanel.com</a>
+    <div class="footer">smmcheappanel.net is no longer in use.</div>
   </main>
-
-  <script>
-    var targetUrl = "https://ssmmpanel.com";
-    var remaining = 10;
-    var secondsEl = document.getElementById("seconds");
-
-    var timer = setInterval(function () {
-      remaining -= 1;
-      if (secondsEl) {
-        secondsEl.textContent = String(remaining);
-      }
-      if (remaining <= 0) {
-        clearInterval(timer);
-        window.location.replace(targetUrl);
-      }
-    }, 1000);
-  </script>
 </body>
 </html>
